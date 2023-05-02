@@ -1,0 +1,203 @@
+*{
+ margin: 0; 
+}
+*::selection{
+   background-color: rgb(255, 255, 255);
+   color: white;
+}
+body{
+   height: 100vh;
+}
+.container{
+   background-color: black;
+   color: white;
+}
+
+   /*N A V B A R*/
+.navbar{
+   background-color: black;
+   height: 50px;
+   color: white;
+   border-radius:0 0 25px 0;
+   position: sticky;
+   top: 0;
+   font-family: fantasy;
+   z-index: 1;
+}
+.navbar-wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   padding: 0 50px;
+}
+.menu-list{
+   display: flex;
+   list-style: none;
+   column-gap: 35px;
+   letter-spacing: 2.5px;
+   font-size: 20px;
+   padding: 0;
+}
+.menu-list-item{
+   cursor: pointer;
+}
+.menu-list-item:hover{
+   font-weight: bold;
+}
+.menu-list-item.active{
+   font-weight: bold;
+}
+.logo{
+   font-size: 30px;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   letter-spacing: 4px;
+   font-weight: 100;
+}
+
+.profile-picture{
+   width: 32px;
+   height: 32px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.profile-container{
+   display: flex;
+   align-items: center;
+   column-gap: 20px;
+}
+.profile-text-container{
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+   line-height: 1;
+}
+.toggle{
+   width: 40px;
+   background-color: white;
+   height: 20px;
+   position: relative;
+   border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.toggle-ball{
+   width: 18px;
+   height: 18px;
+   background-color: black;
+   border-radius: 50%;
+   cursor: pointer;
+   position: absolute;
+   right: 1px;
+}
+.toggle-icon{
+   color: goldenrod;
+}
+.profile-text{
+   letter-spacing: 1px;
+}
+   /*S İ D E B A R*/
+.sidebar{
+   background-color: black;
+   color: rgb(255, 255, 255);
+   height: 90%;
+   width: 50px;
+   border-radius:0 0 25px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 60px;
+   row-gap: 30px;
+   position: fixed;
+   top: 0;
+}
+.sidebar i :hover{
+   color: white;
+}
+
+.sidebar i{
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   cursor: pointer;
+}
+.sidebar i:hover{
+   color: rgb(255, 0, 0);
+}
+/*...F E A T U R E D___S T A R T...*/
+.content-wrapper{
+   margin-left: 50px;
+}
+.featured-content{
+   background: url(img/orig.webp);
+   height: 100vh;
+   padding: 50px;
+   object-fit: cover;
+   background-size: 100% 100%;
+}
+.featured-title{
+   width: 200px;
+}
+.featured-desc{
+   width: 500px;
+   background-color: rgba(177, 177, 177,0.6);
+   padding: 10px;
+   margin: 30px 0;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 18px;
+   font-weight: 900;
+   border-radius: 10px;
+}
+.featured-buttons{
+   display: flex;
+   column-gap: 20px;
+}
+.featured-buttons button{
+   padding: 10px 20px;
+   border-radius: 15px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   display: flex;
+   column-gap: 10px;
+   font-size: 14px;
+   font-weight: bold;
+}
+.featured-buttons .info-button{
+   background-color: rgba(145, 142, 142,0.5);
+   color: white;
+}
+/*   ...F İ L T E R...   */
+.movie-list-filter select{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 7px 0;
+  width: 125px;
+  margin-left: 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+/*M O V İ E L İ S T*/
+.movie-list-container{
+   margin-left: 60px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 800;
+   letter-spacing: 3px;
+   font-size: 22px;
+}
+.movie-list{
+   list-style: none;
+   padding: 0;
+   display: flex;
+}
+.movie-item img {
+   width: 270px;
+}
+.movie-item img:hover{
+   width: 300px;
+   transition: 0.5s;
+   border: 3px solid white;
+   border-radius: 8px;
+}
